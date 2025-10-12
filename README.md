@@ -1,168 +1,274 @@
-# 🌍 OmniDoc AI: Multilingual Intelligent Document Conversational Assistant
+# 🚀 Advanced RAG System# 🚀 Advanced RAG System# 🚀 Advanced RAG System
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Powered by Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/)
-[![LangChain](https://img.shields.io/badge/🦜-LangChain-green)](https://langchain.com/)
 
-A powerful multilingual conversational AI that can read, understand, and interact with any kind of document, including PDFs with scanned images, text documents, research papers, resumes, and reports. Built with LangChain and Hugging Face APIs, featuring OCR support, multilingual embeddings, contextual document classification, and dynamic response generation.
 
----
+A powerful Retrieval-Augmented Generation (RAG) system for intelligent document processing and question answering.
 
-## 🌟 Key Features
 
-### Core Capabilities
 
-- **🌐 Universal Document Support**: Process PDF, DOCX, TXT, CSV, XLSX, PPTX, JPG, PNG files
-- **👁️ Intelligent OCR**: Automatic text extraction from scanned documents and images using TrOCR
-- **🌍 Multilingual Support**: 
-  - Support for 100+ languages
-  - Focus on Indian languages: Hindi, Tamil, Telugu, Bengali, Marathi, Gujarati, Kannada, Malayalam, Punjabi, Urdu
-  - Cross-language queries (ask in Spanish, get answer from English document)
-  - Automatic language detection and translation
-- **🧠 Context-Aware Intelligence**: Adapts behavior based on document type
-  - Resume/CV analysis
-  - Research paper summarization
-  - Legal document simplification
-  - Invoice/financial report extraction
-  - Textbook content explanation
-- **🔍 Advanced RAG**: Retrieval-Augmented Generation with multilingual embeddings
-- **💡 Auto-Generated Insights**: Summaries, key points, and suggested questions
-- **📊 Document Classification**: Zero-shot classification into 6+ categories
-- **🔒 Privacy-Aware**: PII detection and masking
-- **💬 Conversational Memory**: Follow-up questions with context awareness
-- **📚 Source Citations**: Transparent answers with document references
+## ✨ FeaturesA powerful Retrieval-Augmented Generation (RAG) system for intelligent document processing and question answering.A powerful Retrieval-Augmented Generation (RAG) system for intelligent document processing and question answering.
 
----
+
+
+- **🌐 Multi-format Support** - PDF, DOCX, TXT, CSV, XLSX, PPTX, images
+
+- **🔍 Advanced RAG** - Query expansion, hybrid search, intelligent reranking
+
+- **🌍 Multilingual** - 100+ languages supported## ✨ Features## ✨ Features
+
+- **👁️ OCR Support** - Extract text from scanned documents and images
+
+- **🔒 Privacy-Aware** - PII detection and masking
+
+- **💬 Interactive UI** - User-friendly Gradio interface
+
+- **🌐 Multi-format Support** - PDF, DOCX, TXT, CSV, XLSX, PPTX, images- **🌐 Multi-format Support** - PDF, DOCX, TXT, CSV, XLSX, PPTX, images
 
 ## 🚀 Quick Start
 
-### Prerequisites
+- **🔍 Advanced RAG** - Query expansion, hybrid search, intelligent reranking- **� Advanced RAG** - Query expansion, hybrid search, intelligent reranking
 
-- Python 3.8 or higher
-- Hugging Face API key (free tier available)
+### 1. Clone the Repository
 
-### Installation
+```bash- **🌍 Multilingual** - 100+ languages supported- **🌍 Multilingual** - 100+ languages supported
 
-1. **Clone the repository**
-```bash
-git clone <repository-url>
-cd rag
+git clone https://github.com/Charan-L574/RAG.git
+
+cd RAG- **👁️ OCR Support** - Extract text from scanned documents and images- **👁️ OCR Support** - Extract text from scanned documents and images
+
 ```
 
-2. **Create virtual environment** (recommended)
-```bash
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# Linux/Mac
-source venv/bin/activate
-```
+- **🔒 Privacy-Aware** - PII detection and masking- **🔒 Privacy-Aware** - PII detection and masking
 
-3. **Install dependencies**
-```bash
+### 2. Install Dependencies
+
+```bash- **💬 Interactive UI** - User-friendly Gradio interface- **💬 Interactive UI** - User-friendly Gradio interface
+
 pip install -r requirements.txt
+
 ```
 
-4. **Set up environment variables**
+
+
+### 3. Set Up Environment## 🚀 Quick Start## � Quick Start
+
+Create a `.env` file:
+
 ```bash
-# Copy the example env file
-copy .env.example .env
 
-# Edit .env and add your Hugging Face API key
-# Get your key from: https://huggingface.co/settings/tokens
-```
-
-5. **Run the application**
-```bash
-python app.py
-```
-
-6. **Open your browser**
-Navigate to `http://localhost:7860`
-
----
-
-## ⚙️ Configuration
-
-### Environment Variables
-
-Edit the `.env` file to configure the application:
-
-```env
-# Required: Your Hugging Face API Key
 HUGGINGFACE_API_KEY=your_api_key_here
 
-# Model Configuration (Optional - defaults provided)
-EMBEDDING_MODEL=sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
-LLM_MODEL=tiiuae/falcon-7b-instruct
-OCR_MODEL=microsoft/trocr-base-printed
-CLASSIFICATION_MODEL=facebook/bart-large-mnli
-LANGUAGE_DETECTION_MODEL=papluca/xlm-roberta-base-language-detection
-TRANSLATION_MODEL=Helsinki-NLP/opus-mt-mul-en
+```### 1. Clone the Repository### 1. Clone the Repository
 
-# Application Settings (Optional)
-MAX_UPLOAD_SIZE_MB=50
-CHUNK_SIZE=500
-CHUNK_OVERLAP=50
-TOP_K_RETRIEVAL=3
+
+
+### 4. Run the Application```bash```bash
+
+```bash
+
+python app.pygit clone https://github.com/Charan-L574/RAG.gitgit clone https://github.com/Charan-L574/RAG.git
+
 ```
 
-### Getting a Hugging Face API Key
+cd RAGcd RAG
 
-1. Go to [Hugging Face](https://huggingface.co/)
-2. Sign up for a free account
-3. Navigate to [Settings → Access Tokens](https://huggingface.co/settings/tokens)
-4. Create a new token with "Read" permission
-5. Copy the token to your `.env` file
+Open your browser at `http://localhost:7860`
+
+``````
+
+## 📖 How to Use
+
+
+
+1. **Upload Documents** - PDF, DOCX, images, etc.
+
+2. **Process** - Click "Process Documents"### 2. Install Dependencies### 2. Install Dependencies
+
+3. **Ask Questions** - Type your question in any language
+
+4. **Get Answers** - Receive intelligent, context-aware responses```bash```bash
+
+
+
+## 🛠️ Tech Stackpip install -r requirements.txtpip install -r requirements.txt
+
+
+
+- **LLM**: Meta-Llama-3-8B-Instruct``````
+
+- **Embeddings**: paraphrase-multilingual-MiniLM-L12-v2
+
+- **Vector Store**: FAISS
+
+- **OCR**: TrOCR (Microsoft)
+
+- **UI**: Gradio 4.13.0### 3. Set Up Environment### 3. Set Up Environment
+
+- **API**: HuggingFace Inference
+
+Create a `.env` file:Create a `.env` file:
+
+## 📚 Documentation
+
+```bash```bash
+
+- [Quick Start Guide](QUICK_START.md)
+
+- [Full Documentation](docs/)HUGGINGFACE_API_KEY=your_api_key_hereHUGGINGFACE_API_KEY=your_api_key_here
+
+- [Feature Roadmap](docs/ADVANCED_FEATURES_IDEAS.md)
+
+- [Implementation Guide](docs/IMPLEMENTATION_FEASIBILITY.md)``````
+
+
+
+## 🚧 Roadmap
+
+
+
+Coming soon:### 4. Run the Application### 4. Run the Application
+
+- ⚡ Semantic caching (10-100x speed boost)
+
+- 📊 Confidence scoring```bash```bash
+
+- 🔗 Multi-hop reasoning
+
+- 🆚 Comparative analysispython app.pypython app.py
+
+- 🏷️ Entity-aware search
+
+- 📌 Interactive PDF highlighting``````
+
+
+
+See [ADVANCED_FEATURES_IDEAS.md](docs/ADVANCED_FEATURES_IDEAS.md) for 40+ planned features.
+
+
+
+## 🤝 ContributingOpen your browser at `http://localhost:7860`2. **Create virtual environment** (recommended)
+
+
+
+Contributions are welcome! Feel free to open issues or submit pull requests.```bash
+
+
+
+## ⭐ Star this repo if you find it useful!## 📖 How to Usepython -m venv venv
+
+
+
+---# Windows
+
+
+
+**Made with ❤️ using Python & HuggingFace**1. **Upload Documents** - PDF, DOCX, images, etc.venv\Scripts\activate
+
+
+2. **Process** - Click "Process Documents"# Linux/Mac
+
+3. **Ask Questions** - Type your question in any languagesource venv/bin/activate
+
+4. **Get Answers** - Receive intelligent, context-aware responses```
+
+
+
+## 🛠️ Tech Stack3. **Install dependencies**
+
+```bash
+
+- **LLM**: Meta-Llama-3-8B-Instructpip install -r requirements.txt
+
+- **Embeddings**: paraphrase-multilingual-MiniLM-L12-v2```
+
+- **Vector Store**: FAISS
+
+- **OCR**: TrOCR (Microsoft)Open your browser at `http://localhost:7860`
+
+- **UI**: Gradio 4.13.0
+
+- **API**: HuggingFace Inference## 📖 How to Use
+
+
+
+## 📚 Documentation1. **Upload Documents** - PDF, DOCX, images, etc.
+
+2. **Process** - Click "Process Documents"
+
+- [Quick Start Guide](QUICK_START.md)3. **Ask Questions** - Type your question in any language
+
+- [Full Documentation](docs/)4. **Get Answers** - Receive intelligent, context-aware responses
+
+- [Feature Roadmap](docs/ADVANCED_FEATURES_IDEAS.md)
+
+- [Implementation Guide](docs/IMPLEMENTATION_FEASIBILITY.md)## 🛠️ Tech Stack
+
+
+
+## 🚧 Roadmap- **LLM**: Meta-Llama-3-8B-Instruct
+
+- **Embeddings**: paraphrase-multilingual-MiniLM-L12-v2
+
+Coming soon:- **Vector Store**: FAISS
+
+- ⚡ Semantic caching (10-100x speed boost)- **OCR**: TrOCR (Microsoft)
+
+- 📊 Confidence scoring- **UI**: Gradio 4.13.0
+
+- 🔗 Multi-hop reasoning- **API**: HuggingFace Inference
+
+- 🆚 Comparative analysis
+
+- 🏷️ Entity-aware search## 📚 Documentation
+
+- 📌 Interactive PDF highlighting
+
+- [Quick Start Guide](QUICK_START.md)
+
+See [ADVANCED_FEATURES_IDEAS.md](docs/ADVANCED_FEATURES_IDEAS.md) for 40+ planned features.- [Full Documentation](docs/)
+
+- [Feature Roadmap](docs/ADVANCED_FEATURES_IDEAS.md)
+
+## 📄 License- [Implementation Guide](docs/IMPLEMENTATION_FEASIBILITY.md)
+
+
+
+MIT License - see [LICENSE](LICENSE) file for details.## � Roadmap
+
+
+
+## 🤝 ContributingComing soon:
+
+- ⚡ Semantic caching (10-100x speed boost)
+
+Contributions are welcome! Feel free to open issues or submit pull requests.- 📊 Confidence scoring
+
+- 🔗 Multi-hop reasoning
+
+## ⭐ Star this repo if you find it useful!- 🆚 Comparative analysis
+
+- 🏷️ Entity-aware search
+
+---- 📌 Interactive PDF highlighting
+
+
+
+**Made with ❤️ using Python & HuggingFace**See [ADVANCED_FEATURES_IDEAS.md](docs/ADVANCED_FEATURES_IDEAS.md) for 40+ planned features.
+
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## ⭐ Star this repo if you find it useful!
 
 ---
 
-## 📖 Usage Guide
-
-### Basic Workflow
-
-1. **Upload Documents**
-   - Click "Upload Files" and select one or multiple documents
-   - Supported formats: PDF, DOCX, TXT, CSV, XLSX, PPTX, JPG, PNG
-   - Click "Process Documents"
-
-2. **Review Auto-Generated Insights**
-   - Document type classification
-   - Language detection
-   - Summary and key points
-   - Suggested questions
-
-3. **Ask Questions**
-   - Type your question in any language
-   - Enable/disable translation as needed
-   - View answers with source citations
-
-4. **Follow-Up Questions**
-   - Ask follow-up questions referencing previous answers
-   - Conversation memory maintains context
-
-### Example Use Cases
-
-#### 📄 Resume Analysis
-```
-Upload: resume.pdf
-Ask: "What are the candidate's top 5 skills?"
-Ask: "How many years of Python experience does this person have?"
-Ask: "Summarize the candidate's work history"
-```
-
-#### 📚 Research Paper Understanding
-```
-Upload: research_paper.pdf
-Ask: "What is the main research question?"
-Ask: "Explain the methodology used"
-Ask: "What are the key findings?"
-```
-
-#### 📖 Scanned Textbook
-```
-Upload: scanned_chapter.jpg
+**Made with ❤️ using Python & HuggingFace**
 Ask: "What are the main concepts covered?"
 Ask: "Explain the first example"
 Ask: "List all the definitions"
