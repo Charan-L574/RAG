@@ -2,7 +2,7 @@
 
 
 
-A powerful Retrieval-Augmented Generation (RAG) system for intelligent document processing and question answering.
+A powerful document processing and question-answering system using Retrieval-Augmented Generation.
 
 
 
@@ -10,17 +10,17 @@ A powerful Retrieval-Augmented Generation (RAG) system for intelligent document 
 
 
 
-- **🌐 Multi-format Support** - PDF, DOCX, TXT, CSV, XLSX, PPTX, images
+- Multi-format support (PDF, DOCX, TXT, CSV, XLSX, PPTX, images)
 
-- **🔍 Advanced RAG** - Query expansion, hybrid search, intelligent reranking
+- Advanced RAG with query expansion and hybrid search
 
-- **🌍 Multilingual** - 100+ languages supported## ✨ Features## ✨ Features
+- 100+ languages supported## ✨ Features## ✨ Features
 
-- **👁️ OCR Support** - Extract text from scanned documents and images
+- OCR for scanned documents
 
-- **🔒 Privacy-Aware** - PII detection and masking
+- PII detection and masking
 
-- **💬 Interactive UI** - User-friendly Gradio interface
+- Interactive Gradio UI
 
 - **🌐 Multi-format Support** - PDF, DOCX, TXT, CSV, XLSX, PPTX, images- **🌐 Multi-format Support** - PDF, DOCX, TXT, CSV, XLSX, PPTX, images
 
@@ -28,7 +28,7 @@ A powerful Retrieval-Augmented Generation (RAG) system for intelligent document 
 
 - **🔍 Advanced RAG** - Query expansion, hybrid search, intelligent reranking- **� Advanced RAG** - Query expansion, hybrid search, intelligent reranking
 
-### 1. Clone the Repository
+**1. Clone**
 
 ```bash- **🌍 Multilingual** - 100+ languages supported- **🌍 Multilingual** - 100+ languages supported
 
@@ -40,7 +40,7 @@ cd RAG- **👁️ OCR Support** - Extract text from scanned documents and images
 
 - **🔒 Privacy-Aware** - PII detection and masking- **🔒 Privacy-Aware** - PII detection and masking
 
-### 2. Install Dependencies
+**2. Install**
 
 ```bash- **💬 Interactive UI** - User-friendly Gradio interface- **💬 Interactive UI** - User-friendly Gradio interface
 
@@ -50,61 +50,61 @@ pip install -r requirements.txt
 
 
 
-### 3. Set Up Environment## 🚀 Quick Start## � Quick Start
-
-Create a `.env` file:
-
-```bash
-
-HUGGINGFACE_API_KEY=your_api_key_here
-
-```### 1. Clone the Repository### 1. Clone the Repository
+**3. Setup**## 🚀 Quick Start## � Quick Start
 
 
 
-### 4. Run the Application```bash```bash
-
-```bash
-
-python app.pygit clone https://github.com/Charan-L574/RAG.gitgit clone https://github.com/Charan-L574/RAG.git
+Create `.env` file:
 
 ```
 
-cd RAGcd RAG
+HUGGINGFACE_API_KEY=your_api_key_here### 1. Clone the Repository### 1. Clone the Repository
 
-Open your browser at `http://localhost:7860`
+```
+
+```bash```bash
+
+**4. Run**
+
+```bashgit clone https://github.com/Charan-L574/RAG.gitgit clone https://github.com/Charan-L574/RAG.git
+
+python app.py
+
+```cd RAGcd RAG
+
+
+
+Open `http://localhost:7860` in your browser.``````
+
+
+
+## 📖 Usage
+
+
+
+1. Upload documents### 2. Install Dependencies### 2. Install Dependencies
+
+2. Click "Process Documents"
+
+3. Ask questions```bash```bash
+
+4. Get AI-powered answers
+
+pip install -r requirements.txtpip install -r requirements.txt
+
+## 🛠️ Tech Stack
 
 ``````
 
-## 📖 How to Use
+- LLM: Meta-Llama-3-8B-Instruct
 
+- Embeddings: paraphrase-multilingual-MiniLM-L12-v2
 
+- Vector Store: FAISS
 
-1. **Upload Documents** - PDF, DOCX, images, etc.
+- OCR: TrOCR### 3. Set Up Environment### 3. Set Up Environment
 
-2. **Process** - Click "Process Documents"### 2. Install Dependencies### 2. Install Dependencies
-
-3. **Ask Questions** - Type your question in any language
-
-4. **Get Answers** - Receive intelligent, context-aware responses```bash```bash
-
-
-
-## 🛠️ Tech Stackpip install -r requirements.txtpip install -r requirements.txt
-
-
-
-- **LLM**: Meta-Llama-3-8B-Instruct``````
-
-- **Embeddings**: paraphrase-multilingual-MiniLM-L12-v2
-
-- **Vector Store**: FAISS
-
-- **OCR**: TrOCR (Microsoft)
-
-- **UI**: Gradio 4.13.0### 3. Set Up Environment### 3. Set Up Environment
-
-- **API**: HuggingFace Inference
+- UI: Gradio
 
 Create a `.env` file:Create a `.env` file:
 
@@ -112,58 +112,49 @@ Create a `.env` file:Create a `.env` file:
 
 ```bash```bash
 
-- [Quick Start Guide](QUICK_START.md)
+- [Quick Start](QUICK_START.md)
 
-- [Full Documentation](docs/)HUGGINGFACE_API_KEY=your_api_key_hereHUGGINGFACE_API_KEY=your_api_key_here
+- [Full Docs](docs/)HUGGINGFACE_API_KEY=your_api_key_hereHUGGINGFACE_API_KEY=your_api_key_here
 
 - [Feature Roadmap](docs/ADVANCED_FEATURES_IDEAS.md)
 
-- [Implementation Guide](docs/IMPLEMENTATION_FEASIBILITY.md)``````
+``````
+
+## 🚧 Coming Soon
 
 
 
-## 🚧 Roadmap
+- ⚡ Semantic caching
 
-
-
-Coming soon:### 4. Run the Application### 4. Run the Application
-
-- ⚡ Semantic caching (10-100x speed boost)
-
-- 📊 Confidence scoring```bash```bash
+- 📊 Confidence scoring### 4. Run the Application### 4. Run the Application
 
 - 🔗 Multi-hop reasoning
 
-- 🆚 Comparative analysispython app.pypython app.py
+- 🆚 Comparative analysis```bash```bash
 
 - 🏷️ Entity-aware search
 
-- 📌 Interactive PDF highlighting``````
+python app.pypython app.py
+
+See [full roadmap](docs/ADVANCED_FEATURES_IDEAS.md) for 40+ planned features.
+
+``````
+
+---
 
 
 
-See [ADVANCED_FEATURES_IDEAS.md](docs/ADVANCED_FEATURES_IDEAS.md) for 40+ planned features.
+**Made with ❤️ using Python & HuggingFace**
 
+Open your browser at `http://localhost:7860`2. **Create virtual environment** (recommended)
 
+```bash
 
-## 🤝 ContributingOpen your browser at `http://localhost:7860`2. **Create virtual environment** (recommended)
+## 📖 How to Usepython -m venv venv
 
+# Windows
 
-
-Contributions are welcome! Feel free to open issues or submit pull requests.```bash
-
-
-
-## ⭐ Star this repo if you find it useful!## 📖 How to Usepython -m venv venv
-
-
-
----# Windows
-
-
-
-**Made with ❤️ using Python & HuggingFace**1. **Upload Documents** - PDF, DOCX, images, etc.venv\Scripts\activate
-
+1. **Upload Documents** - PDF, DOCX, images, etc.venv\Scripts\activate
 
 2. **Process** - Click "Process Documents"# Linux/Mac
 
