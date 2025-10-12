@@ -116,7 +116,6 @@ Automatically suggests relevant questions based on document content to help user
 For detailed guides and references, see:
 - [Quick Start Guide](QUICK_START.md)
 - [Project Structure](PROJECT_STRUCTURE.md)
-- [Feature Roadmap](docs/ADVANCED_FEATURES_IDEAS.md)
 - [Complete Documentation](docs/)
 
 
