@@ -1,0 +1,31 @@
+# Environment
+.env
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+uploads/
+*.faiss
+vector_store/
+temp/
+
+# OS
+.DS_Store
+Thumbs.db
