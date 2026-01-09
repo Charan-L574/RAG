@@ -33,10 +33,13 @@ python-dotenv==1.0.0
 requests==2.31.0
 tqdm==4.66.1
 
-# Graph Visualization
+# Graph Visualization (optional)
 networkx==3.2.1
 matplotlib==3.8.2
 
 # Additional Tools
 pytesseract==0.3.10
 openpyxl==3.1.2
+
+# Database for self-improving feature
+# SQLite is included with Python, no need to install

@@ -26,6 +26,10 @@ uploads/
 vector_store/
 temp/
 
+# Documentation (interview prep materials)
+docs/
+INTERVIEW_THEORY_GUIDE.md
+
 # OS
 .DS_Store
 Thumbs.db
